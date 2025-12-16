@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BonPied | Accueil</title>
+
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-</body>
+
+    <!-- header -->
+
+    <header class="flex space-between align-center padding-20">
+
+        <a href="index.html" class="w-23 ">
+
+            <img class="w-23 image" src="asset/logo-bon-pied1.png">
+
+        </a>
+
+        <!-- Navigation -->
+        <nav class="">
+            <ul class="flex space-between gap-12 epiloguePolice">
+                <li><a href="">À propos</a></li>
+                <li><a href="#projets">Nos produits</a></li>
+                <li><a href="#contact">Témoignages clients</a></li>
+            </ul>
+        </nav>
+
+        <!-- Bouton de contact -->
+        <a class="btn btn-primary"><img src="asset/ShoppingCartSimple.png" alt=""></a>
+    </header>
+
+
+    <main>
+
+        <!-- SECTION HERO - Bannière -->
+        <section class="flex bgBeige">
+            <div class="flex container space-between  align-center">
+                <!-- la premiere div de ma banner -->
+                <div class="w-48">
+
+                    <h2>Bon pied</h2>
+                    <h1>Sneakers Éco-sourcés à Rennes</h1>
+                    <p>Marchez avec style tout en respectant la planète avec BonPied, votre destination de sneakers
+                        éco-sourcés à Rennes</p>
+
+                    <!-- bouton pour découvrir la collection -->
+                    <a class="btn" href=""> Découvrez notre collection</a>
+                </div>
+                <!-- la deuxième div de ma banner -->
+                <div class="w-48">
+                    <img src="asset/basketBanner.png" alt="" class="w-98 ">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION Nos produits -->
+        <section class="container bgred">
+            <h3>Nos produits</h3>
+            <div class="flex">
+                <!-- ma premiere div produit -->
+                <div class="w-33">
+                    <img src="asset/Photo.png" class="w-98" alt="">
+                    <p>Modern Picture</p>
+                    <div class="flex">
+                        <p>$15.00</p>
+                        <p>$35.00</p>
+                    </div>
+                    <a class="btn2" href="">En savoir plus</a>
+                </div>
+                <!-- ma deuxieme  div produit-->
+                <div class="w-33">
+                    <img src="asset/Photo.png" class="w-98" alt="">
+                    <p>Modern Picture</p>
+                    <div class="flex">
+                        <p>$15.00</p>
+                        <p>$35.00</p>
+                    </div>
+                    <a class="btn2" href="">En savoir plus</a>
+                </div>
+                <!-- ma troisième  div produit-->
+                <div class="w-33">
+                    <img src="asset/Photo.png" class="w-98" alt="">
+                    <p>Modern Picture</p>
+                    <div class="flex">
+                        <p>$15.00</p>
+                        <p>$35.00</p>
+                    </div>
+                    <a class="btn2" href="">En savoir plus</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- SECTION Avantage Clients-->
+        <section class="bgGreen">
+            <p>Sneakers éco-sourcés fabriquées avec des matériaux durables | Designs tendance pour un style unique
+                .......</p>
+        </section>
+
+
+
+<!-- SECTION Nos services  -->
+<section class="container">
+    <h3>Nos services</h3>
+
+    <div class="flex space-between">
+        <!-- ma première div Nos services -->
+        <div class="w-33 textCenter card">
+            <i class="icone ph-fill ph-pencil-simple-line"></i>
+            <p class="txtGras">Personnalisation</p>
+            <p>Personnalisez vos sneakers pour un style unique. Choisissez vos couleurs, motifs et matériaux préférés
+                pour des chaussures qui reflètent votre personnalité.</p>
+        </div>
+        <!-- ma deuxième div Nos services -->
+        <div class="w-33 textCenter card">
+            <i class="icone ph-fill ph-recycle"></i>
+            <p class="txtGras">Recyclage</p>
+            <p>Participez à notre programme de recyclage. Ramenez vos anciennes sneakers BonPied pour qu'elles soient
+                recyclées de manière responsable, contribuant ainsi à la réduction des déchets.</p>
+        </div>
+        <!-- ma troisième div Nos services -->
+        <div class="w-33 textCenter card">
+            <i class="icone ph-fill ph-leaf"></i>
+            <p class="txtGras">Événements Responsables</p>
+            <p>Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à la
+                durabilité et promouvoir un mode de vie éco-conscient.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION Retours Clients -->
+<section class="container">
+    <h3>Retours clients</h3>
+
+    <div class="flex">
+        <!-- ma première div Retour Client -->
+        <div class="w-33 textCenter"><p>Emma</p><p>Sneakers Urbaines</p><p>Les sneakers urbaines de BonPied sont incroyables. Elles sont confortables, stylées et le fait qu'elles soient éco-sourcées me donne encore plus de raisons de les adorer. Merci pour cette superbe collection !</p></div>
+        <div class="w-33 textCenter"><p>Louis</p><p>Personnalisation</p><p>J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une expérience exceptionnelle !</p></div>
+        <div class="w-33 textCenter"><p>Léa</p><p>Recyclage</p><p>Je suis reconnaissante que BonPied offre un programme de recyclage. C'est agréable de savoir que mes anciennes sneakers sont recyclées de manière responsable. Une initiative géniale !</p></div>
+    </div>
+    </section>
+    </body>
 </html>
