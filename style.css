@@ -90,6 +90,12 @@
     width: 48%;
 }
 
+
+.w-73{
+    width: 73%;
+}
+
+
 .w-98 {
     width: 98%;
 }
@@ -232,7 +238,22 @@ padding: 20px;
     font-weight: bold;
 }
 
+/* pour mettre mon texte en gras */
+.txtWhite{
+    color: white;
+}
+
 /* style de mes 3 icones phoshore-icon */
 .icone{
     font-size: 50px;
+}
+
+/* color jaune pour mes étoiles */ 
+.colorYellow
+{
+color: #F4B93D
+}
+
+.bgFooter{
+background-color: #354733
 }
