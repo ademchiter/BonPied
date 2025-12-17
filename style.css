@@ -109,6 +109,10 @@
 }
 
 /* classes margin / padding pour aérer ma page */
+.margin-top-5 {
+    margin-top: 6px;
+}
+
 .margin-top-6 {
     margin-top: 6px;
 }
