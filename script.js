@@ -28,12 +28,12 @@ function afficherProduits(data) {
                 <!-- la premiere div de ma banner -->
                 <div class="w-48">
 
-                    <h2>${nomCommercial}</h2>
-                    <h1>${baseLine}</h1>
-                    <p>${phraseAccroche}</p>
+                    <h2 class="margin-top-40">${nomCommercial}</h2>
+                    <h1 class="txtVert margin-top-20">${baseLine}</h1>
+                    <p class="txtVert2 margin-top-10">${phraseAccroche}</p>
 
                     <!-- bouton pour découvrir la collection -->
-                    <a class="btn" href="">${texteAppelAction}</a>
+                    <a class="btn margin-top-10"" href="">${texteAppelAction}</a>
                 </div>
                 <!-- la deuxième div de ma banner -->
                 <div class="w-48">
@@ -49,17 +49,24 @@ function afficherProduits(data) {
     document.getElementById("produits").innerHTML += `  
          
                 <!-- ma premiere div produit -->
-                <div class="w-33">
+                <div class="w-33 card" data-aos="zoom-in"  data-aos-duration="700">
                     <img src="${produit.imageUrl}" class="w-98" alt="">
-                    <p>${produit.nom}</p>
-                    <div class="flex">
-                       $<p>${produit.prix}</p> 
+                    <p class="txtGras">${produit.nom}</p>
+                    <div class="flex  margin-top-10 gap-10">
+                      <div> <p "margin-top-20">$${produit.prix}</p> </div>  
+                       
+                      <div>  <p class="txtBarre">$${produit.prixAvantReduc} </p></div>  
                     </div>
-                    <a class="btn2" href="">En savoir plus</a>
+                    <a class="btn2 margin-top-20" href="">En savoir plus</a>
                 </div>
         
 
 `    });
+
+
+ 
+     //j'injecte mes avantages clients
+  //  document.getElementById("section1").innerHTML += `   avantage`
 
     //pour chaque service
     services.forEach(service => {
@@ -68,10 +75,10 @@ function afficherProduits(data) {
     document.getElementById("services").innerHTML += `  
          
                 <!-- ma première div Nos services -->
-                <div class="w-33 textCenter card">
+                <div class="w-33 textCenter card" data-aos="fade-up" data-aos-duration="1500" data-aos-duration="700">
                     <i class="${service.classPhosphoreIcon}"></i>
-                    <p class="txtGras">${service.nom}</p>
-                    <p>${service.description}</p>
+                    <p class="txtGras margin-top-10">${service.nom}</p>
+                    <p class="margin-top-10">${service.description}</p>
                 </div>
   
         
@@ -86,20 +93,22 @@ function afficherProduits(data) {
     //ma variable contenant le nombre d'étoiles pour chaque témoignage
     let suiteEtoiles = ""
     
-    // mon système d'étoile
+    // je boucle pour afficher le nombre d'étoiles
     for (let i = 1; i <= test; i++) {
        suiteEtoiles= suiteEtoiles + `<i class="ph-fill ph-star colorYellow"></i>`
         
     }
 
     //j'injecte mes données dans ma section services
-    document.getElementById("temoignages").innerHTML += `                     <div class="card w-33 textCenter">
-                        <p>${temoignage.prenom}</p>
+    document.getElementById("temoignages").innerHTML += `      
+                   <div class="card w-33 textCenter" data-aos="flip-left" data-aos-duration="1500">
+                <img src="${temoignage.imgUrl}" class="w-15 imageProfil">
+                   <p class="txtGras ">${temoignage.prenom}</p>
 
-                      <p> ${suiteEtoiles}</p>
+                      <p class="margin-top-10"> ${suiteEtoiles}</p>
  
-                        <p>${temoignage.typeExperience}</p>
-                        <p>${temoignage.commentaire}</p>
+                        <p class="margin-top-10 txtItalic">${temoignage.typeExperience}</p>
+                        <p class="margin-top-10" >${temoignage.commentaire}</p>
                     </div>
 
 `    });

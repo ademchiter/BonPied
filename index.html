@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BonPied | Accueil</title>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manjari:wght@100;400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,31 +56,37 @@
     <main>
 
         <!-- SECTION HERO - Bannière -->
-        <section id="section1" class="flex bgBeige">
-       
+        <section id="section1" class="flex bgBeige padding-50">
+
         </section>
 
         <!-- SECTION Nos produits -->
         <section id="section2" class="container padding-40">
             <h3>Nos produits</h3>
-            <div id="produits" class="flex margin-top-40">
- 
+            <div id="produits" class="flex margin-top-40 space-between">
+
             </div>
 
 
         </section>
 
-        <!-- SECTION Avantage Clients-->
-        <section class="bgGreen">
-            <p>Sneakers éco-sourcés fabriquées avec des matériaux durables | Designs tendance pour un style unique
-                .......</p>
-        </section>
+        <!-- SECTION Avantage Clients
+        <section class="bgGreen padding-20 ">
+            <div class="flex-m">
+                <div id="avantage" class="avantage">
+                    <p>Sneakers éco-sourcés fabriquées avec des matériaux durables | Designs tendance pour un style
+                        unique
+                        .......</p>
+                </div>
 
+            </div>
+        </section>
+-->
         <!-- SECTION Nos services  -->
         <section class="container padding-40">
-            <h3>Nos services</h3>
+            <h3>Nos Services</h3>
 
-            <div id="services" class="flex space-between margin-top-40">
+            <div id="services" class="flex space-between margin-top-40"> 
 
             </div>
         </section>
@@ -76,9 +94,9 @@
         <!-- SECTION Retours Clients -->
         <section class="bgBeige padding-40">
             <div class="container">
-                <h3>Retours clients</h3>
+                <h3>Retours Clients</h3>
 
-                <div id="temoignages" class="flex margin-top-40">
+                <div id="temoignages" class="flex space-between margin-top-40">
                     <!-- ma première div Retour Client -->
 
                 </div>
@@ -95,15 +113,16 @@
                 <!-- ma première div -->
                 <div class="footerParagraph w-48 flex space-between align-center ">
                     <div class="w-23 flex justify-center ">
-                        <img src="asset/logo-bon-pied2.png" alt="" class="w-98">
-                       <div class="margin-top-10 "><i class="ph ph-instagram-logo txtWhite"></i>
-                        <i class="ph ph-linkedin-logo txtWhite"></i></div> 
+                        <img src="asset/logo-bon-pied3.png" alt="" class="w-98">
+                        <div class="margin-top-10 "><i class="ph ph-instagram-logo txtWhite"></i>
+                            <i class="ph ph-linkedin-logo txtWhite"></i>
+                        </div>
                     </div>
                     <p class="w-73 txtWhite ">Rejoignez la communauté bon pied et consommez autrement pour une planéte
                         plsu verte ! </p>
 
 
-    
+
                 </div>
                 <!-- ma deuxième div -->
                 <div class="w-48"> <!-- mon formulaire de contact -->
@@ -118,6 +137,11 @@
 
         </div>
     </footer>
+
+    <script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

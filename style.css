@@ -63,8 +63,16 @@
     gap: 12px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
 
 /* CLASSES DE DIMENSIONS (classes de largeur)*/
+
+.w-15 {
+    width: 15%;
+}
 
 .w-23 {
     width: 23%;
@@ -236,6 +244,9 @@ background-color: #F2EDEA;
 background-color: #D2D0A0;
 color: #73946B;
 text-transform: uppercase;
+font-size:  25px;
+font-weight: bold;
+  font-family: "Inria Sans", sans-serif;
 }
 
 /* style de mes cartes services */
@@ -250,7 +261,11 @@ padding: 20px;
     font-weight: bold;
 }
 
-/* pour mettre mon texte en gras */
+/* pour mettre mon texte en italic */
+.txtItalic{
+    font-style: italic;
+}
+/* pour mettre mon texte en blanc */
 .txtWhite{
     color: white;
 }
@@ -268,4 +283,68 @@ color: #F4B93D
 
 .bgFooter{
 background-color: #354733
+}
+
+
+/* MARQUEE */
+ 
+/* Conteneur visible */
+.flex-m {
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  flex-wrap:nowrap;
+  animation: marquee 20s linear infinite;
+  gap: 16px;
+}
+
+
+
+/* Chaque bloc */
+.avantage {
+   
+    width: 100%; 
+}
+
+/* Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+ 
+ /* style de mes h1, h2, h3*/
+ h1, h2, h3{
+   font-family: "Manjari", sans-serif;
+
+}
+
+h2{
+    font-size: 55px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+.imageProfil{
+    border-radius:50%; 
+}
+
+/* color pour Bannière */
+.txtVert{
+color: #61865D;
+} 
+
+.txtVert2{
+color: #808276;
+} 
+
+/* style de mes prix avant reduction*/
+.txtBarre{
+    color: #AFB2AA;
+    text-decoration-line: line-through;
 }

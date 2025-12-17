@@ -1,8 +1,8 @@
 {
-  "nomCommercial": "BonPied",
+  "nomCommercial": "Bon Pied",
   "baseLine": "Sneakers Éco-sourcés à Rennes",
   "phraseAccroche": "Marchez avec style tout en respectant la planète avec BonPied, votre destination de sneakers éco-sourcés à Rennes",
-  "texteAppelAction": "Découvrez notre collection responsable",
+  "texteAppelAction": "Découvrez notre collection",
   "avantagesClients": [
     "Sneakers éco-sourcés fabriquées avec des matériaux durables",
     "Designs tendance pour un style unique",
@@ -13,37 +13,44 @@
       "nom": "Sneakers Classic",
       "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire1-removebg-preview.png",
-      "prix": "15.00"
+      "prix": "15.00",
+      "prixAvantReduc": "17.00"
     },
     {
       "nom": "Sneakers Urbaines",
       "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire2-removebg-preview.png",
-      "prix": "21.00"
+      "prix": "21.00",
+      "prixAvantReduc": "24.00"
     },
     {
       "nom": "Sneakers Légères",
       "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire3-removebg-preview.png",
-      "prix": "32.00"
+      "prix": "32.00",
+      "prixAvantReduc": "36.00"
+
     },
     {
       "nom": "Sneakers Hautes Performance",
       "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire4-removebg-preview.png",
-      "prix": "28.00"
+      "prix": "28.00",
+      "prixAvantReduc": "30.00"
     },
     {
       "nom": "Sneakers Vintage Éco-sourcées",
       "description": "Retrouvez le charme du vintage avec nos sneakers éco-sourcées. Des modèles rétro repensés avec des matériaux respectueux de l'environnement.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire5-removebg-preview.png",
-        "prix": "21.00"
+      "prix": "21.00",
+      "prixAvantReduc": "24.00"
     },
     {
       "nom": "Sneakers Minimal Éco",
       "description": "Misez sur l’essentiel avec nos sneakers minimalistes éco-responsables. Un design épuré, des lignes sobres et des matériaux recyclés pour un style intemporel et une empreinte environnementale réduite.",
       "imageUrl": "https://nico-on-web.github.io/sneakers-assignement-js/images/paire6-removebg-preview.png",
-      "prix": "12.00"    
+      "prix": "12.00",
+      "prixAvantReduc": "14.00"
     }
   ],
   "services": [
@@ -68,19 +75,22 @@
       "prenom": "Emma",
       "typeExperience": "Sneakers Urbaines",
       "commentaire": "Les sneakers urbaines de BonPied sont incroyables. Elles sont confortables, stylées et le fait qu'elles soient éco-sourcées me donne encore plus de raisons de les adorer. Merci pour cette superbe collection !",
-      "note": 4
+      "note": 4,
+      "imgUrl": "asset/user1.png"
     },
     {
       "prenom": "Louis",
       "typeExperience": "Personnalisation",
       "commentaire": "J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une expérience exceptionnelle !",
-      "note": 5
+      "note": 5,
+      "imgUrl": "asset/user2.png"
     },
     {
       "prenom": "Léa",
       "typeExperience": "Recyclage",
       "commentaire": "Je suis reconnaissante que BonPied offre un programme de recyclage. C'est agréable de savoir que mes anciennes sneakers sont recyclées de manière responsable. Une initiative géniale !",
-      "note": 5
+      "note": 5,
+      "imgUrl": "asset/user3.png"
     }
   ]
 }
