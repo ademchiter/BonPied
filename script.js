@@ -20,7 +20,7 @@ function afficherProduits(data) {
     let texteAppelAction = data.texteAppelAction;
     let produits = data.produits;
     let services = data.services;
-    let temoignages=data.temoignages;
+    let temoignages = data.temoignages;
 
 
     //j'injecte mes données dans ma bannière 
@@ -42,11 +42,11 @@ function afficherProduits(data) {
             </div>`
 
 
-            //pour chaque produit
+    //pour chaque produit
     produits.forEach(produit => {
- 
-    //j'injecte mes données dans ma section produits
-    document.getElementById("produits").innerHTML += `  
+
+        //j'injecte mes données dans ma section produits
+        document.getElementById("produits").innerHTML += `  
          
                 <!-- ma premiere div produit -->
                 <div class="w-33 card" data-aos="zoom-in"  data-aos-duration="700">
@@ -64,15 +64,15 @@ function afficherProduits(data) {
 `    });
 
 
- 
-     //j'injecte mes avantages clients
-  //  document.getElementById("section1").innerHTML += `   avantage`
+
+    //j'injecte mes avantages clients
+    //  document.getElementById("section1").innerHTML += `   avantage`
 
     //pour chaque service
     services.forEach(service => {
 
-    //j'injecte mes données dans ma section services
-    document.getElementById("services").innerHTML += `  
+        //j'injecte mes données dans ma section services
+        document.getElementById("services").innerHTML += `  
          
                 <!-- ma première div Nos services -->
                 <div class="w-33 textCenter card" data-aos="fade-up" data-aos-duration="1500" data-aos-duration="700">
@@ -87,20 +87,20 @@ function afficherProduits(data) {
     //pour chaque temoignage
     temoignages.forEach(temoignage => {
 
-    
-    let test=temoignage.note
-    
-    //ma variable contenant le nombre d'étoiles pour chaque témoignage
-    let suiteEtoiles = ""
-    
-    // je boucle pour afficher le nombre d'étoiles
-    for (let i = 1; i <= test; i++) {
-       suiteEtoiles= suiteEtoiles + `<i class="ph-fill ph-star colorYellow"></i>`
-        
-    }
 
-    //j'injecte mes données dans ma section services
-    document.getElementById("temoignages").innerHTML += `      
+        let test = temoignage.note
+
+        //ma variable contenant le nombre d'étoiles pour chaque témoignage
+        let suiteEtoiles = ""
+
+        // je boucle pour afficher le nombre d'étoiles
+        for (let i = 1; i <= test; i++) {
+            suiteEtoiles = suiteEtoiles + `<i class="ph-fill ph-star colorYellow"></i>`
+
+        }
+
+        //j'injecte mes données dans ma section services
+        document.getElementById("temoignages").innerHTML += `      
                    <div class="card w-33 textCenter" data-aos="flip-left" data-aos-duration="1500">
                 <img src="${temoignage.imgUrl}" class="w-15 imageProfil">
                    <p class="txtGras ">${temoignage.prenom}</p>
@@ -113,5 +113,5 @@ function afficherProduits(data) {
 
 `    });
 
-     
+
 }
