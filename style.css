@@ -228,16 +228,22 @@ header ul {
     padding: 10px 20px;
     display: inline-block;
     font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 /* bouton "en savoir plus" */
 .btn2 {
     background-color: #354733;
     color: white;
-    padding: 10px 20px;
+    padding: 7px 15px; 
     display: inline-block;
     font-weight: bold;
     border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+        font-size: 12px;
+    font-weight: 300;
 }
 
 
