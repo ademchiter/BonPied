@@ -52,8 +52,8 @@ function afficherProduits(data) {
                 <div class="w-33 card margin-top-5" data-aos="zoom-in"  data-aos-duration="700">
                     <img src="${produit.imageUrl}" class="w-98" alt="">
                     <p class="txtGras">${produit.nom}</p>
-                    <div class="flex  margin-top-10 gap-10">
-                      <div> <p "margin-top-20">$${produit.prix}</p> </div>  
+                    <div class="flex  margin-top-10 gap-10 policeRaleway prix ">
+                      <div> <p "margin-top-20 ">$${produit.prix}</p> </div>  
                        
                       <div>  <p class="txtBarre">$${produit.prixAvantReduc} </p></div>  
                     </div>
