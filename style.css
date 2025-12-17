@@ -247,6 +247,16 @@ header ul {
 }
 
 
+/* bouton "Envoyer" footer */
+.btn3 {
+    background-color: white;
+    color: #354733;
+    padding: 15px 25px;
+    border: none;
+    font-family: "Epilogue", sans-serif;
+    font-weight:600;
+}
+
 /* style de ma section Avantage client */
 .bgGreen {
     background-color: #D2D0A0;
