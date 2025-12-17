@@ -226,8 +226,7 @@ header ul {
     background-color: #354733;
     color: white;
     padding: 10px 20px;
-    display: inline-block;
-    font-weight: bold;
+    display: inline-block; 
     font-family: "Raleway", sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -238,8 +237,7 @@ header ul {
     background-color: #354733;
     color: white;
     padding: 7px 15px; 
-    display: inline-block;
-    font-weight: bold;
+    display: inline-block; 
     border-radius: 20px;
     font-family: "Raleway", sans-serif;
         font-size: 12px;
@@ -345,17 +343,28 @@ h3 {
     border-radius: 50%;
 }
 
-/* color pour Bannière */
+/* Style de ma baseline*/
 .txtVert {
     color: #61865D;
 }
 
+/* Style de ma phrase d'accroche */
 .txtVert2 {
     color: #808276;
+    
+    font-size: 15px;
 }
 
 /* style de mes prix avant reduction*/
 .txtBarre {
     color: #AFB2AA;
     text-decoration-line: line-through;
+}
+
+.policeInter{
+  font-family: "Inter", sans-serif;
+}
+
+.policeRaleway{
+    font-family: "Raleway", sans-serif;
 }

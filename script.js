@@ -30,7 +30,7 @@ function afficherProduits(data) {
 
                     <h2 class="margin-top-40">${nomCommercial}</h2>
                     <h1 class="txtVert margin-top-20">${baseLine}</h1>
-                    <p class="txtVert2 margin-top-10">${phraseAccroche}</p>
+                    <p class="txtVert2 margin-top-10 policeRaleway">${phraseAccroche}</p>
 
                     <!-- bouton pour découvrir la collection -->
                     <a class="btn margin-top-10"" href="">${texteAppelAction}</a>
