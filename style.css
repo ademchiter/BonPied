@@ -113,6 +113,10 @@
 .margin-top-30 {
     margin-top: 30px;
 }
+.margin-top-40 {
+    margin-top: 40px;
+}
+
 
 .margin-top-50 {
     margin-top: 50px;
@@ -130,6 +134,11 @@
 .padding-top-20 {
     padding-top: 20px;
 }
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
 
 .padding-top-50 {
     padding-top: 50px;
@@ -151,6 +160,9 @@
     padding: 50px;
 }
 
+.padding-40 {
+    padding: 40px;
+}
 
 
 body {
