@@ -382,6 +382,8 @@ h3 {
     text-decoration-line: line-through;
 }
 
+
+/* mes polices */
 .policeInter {
     font-family: "Inter", sans-serif;
 }
@@ -394,6 +396,10 @@ h3 {
     font-family: "Lato", sans-serif;
 }
 
+.policeEpilogue {
+    font-family: "Epilogue", sans-serif;
+}
+
 .prix {
     font-size: 15px;
 }
@@ -402,4 +408,9 @@ h3 {
 .paddingFormulaire {
     padding: 10px 150px 10px 10px;
 
+}
+
+.pFooter{ 
+    font-size: 13px;
+    font-weight: 300;
 }
