@@ -237,7 +237,7 @@ header ul {
     background-color: #354733;
     color: white;
     padding: 10px 20px;
-    display: inline-block; 
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -247,11 +247,11 @@ header ul {
 .btn2 {
     background-color: #354733;
     color: white;
-    padding: 7px 15px; 
-    display: inline-block; 
+    padding: 7px 15px;
+    display: inline-block;
     border-radius: 20px;
     font-family: "Raleway", sans-serif;
-        font-size: 12px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -263,7 +263,7 @@ header ul {
     padding: 15px 25px;
     border: none;
     font-family: "Epilogue", sans-serif;
-    font-weight:600;
+    font-weight: 600;
 }
 
 /* style de ma section Avantage client */
@@ -372,7 +372,7 @@ h3 {
 /* Style de ma phrase d'accroche */
 .txtVert2 {
     color: #808276;
-    
+
     font-size: 15px;
 }
 
@@ -382,12 +382,16 @@ h3 {
     text-decoration-line: line-through;
 }
 
-.policeInter{
-  font-family: "Inter", sans-serif;
+.policeInter {
+    font-family: "Inter", sans-serif;
 }
 
-.policeRaleway{
+.policeRaleway {
     font-family: "Raleway", sans-serif;
+}
+
+.policeLato {
+    font-family: "Lato", sans-serif;
 }
 
 .prix {

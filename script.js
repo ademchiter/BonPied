@@ -51,7 +51,7 @@ function afficherProduits(data) {
                 <!-- ma premiere div produit -->
                 <div class="w-33 card margin-top-5" data-aos="zoom-in"  data-aos-duration="700">
                     <img src="${produit.imageUrl}" class="w-98" alt="">
-                    <p class="txtGras">${produit.nom}</p>
+                    <p class="txtGras policeLato">${produit.nom}</p>
                     <div class="flex  margin-top-10 gap-10 policeRaleway prix ">
                       <div> <p "margin-top-20 ">$${produit.prix}</p> </div>  
                        
