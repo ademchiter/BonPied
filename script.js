@@ -24,7 +24,6 @@ function afficherBanniere(data) {
 
 
     // je récupère mes données et je les met dans mes variables
-
     let nomCommercial = data.nomCommercial;
     let baseLine = data.baseLine;
     let phraseAccroche = data.phraseAccroche;
@@ -58,12 +57,8 @@ RETURN : RIEN
 */
 function afficherProduits(data) {
 
-
-
     // je récupère mes données et je les met dans mes variables
-
     let produits = data.produits;
-
 
     //pour chaque produit
     produits.forEach(produit => {
@@ -96,16 +91,17 @@ RETURN : RIEN
 function afficherAvantages(data) {
 
     // je récupère mes données et je les met dans mes variables
-
     let avantages = data.avantagesClients;
 
-    // phrase qui s'affichera dans ma section avantages clients
+    // variable contenant la phrase qui s'affichera dans ma section avantages clients
     let phraseAvantage = "";
 
+    // je boucle sur tout les avantages pour créer la phrase
     avantages.forEach(avantage => {
         phraseAvantage = phraseAvantage + `${avantage} | `
     });
 
+    // j'injecte la phrase dans ma section Avantage
     document.getElementById("avantage").innerHTML += `${phraseAvantage}`
 
 
@@ -118,6 +114,7 @@ RETURN : RIEN
 */
 function afficherServices(data) {
 
+    // je récupère mes données et je les met dans mes variables
     let services = data.services;
 
     //pour chaque service
@@ -146,19 +143,8 @@ RETURN : RIEN
 */
 function afficherTemoignages(data) {
 
-
-    let nomCommercial = data.nomCommercial;
-    let baseLine = data.baseLine;
-    let phraseAccroche = data.phraseAccroche;
-    let texteAppelAction = data.texteAppelAction;
-    let avantages = data.avantagesClients;
-    let produits = data.produits;
-    let services = data.services;
+    // je récupère mes données et je les met dans mes variables
     let temoignages = data.temoignages;
-    // phrase qui s'affichera dans ma section avantages clients
-    let phraseAvantage = "";
-
-
 
     //pour chaque temoignage
     temoignages.forEach(temoignage => {
@@ -175,7 +161,7 @@ function afficherTemoignages(data) {
 
         }
 
-        //j'injecte mes données dans ma section services
+        //j'injecte mes données dans ma section témoignages
         document.getElementById("temoignages").innerHTML += `      
                    <div class="card w-33 textCenter" data-aos="flip-left" data-aos-duration="1500">
                 <img src="${temoignage.imgUrl}" class="w-15 imageProfil">
