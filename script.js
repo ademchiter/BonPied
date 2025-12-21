@@ -49,7 +49,7 @@ function afficherProduits(data) {
         document.getElementById("produits").innerHTML += `  
          
                 <!-- ma premiere div produit -->
-                <div class="w-33 card margin-top-5" data-aos="zoom-in"  data-aos-duration="700">
+                <div class="w-33 card margin-top-15" data-aos="zoom-in"  data-aos-duration="700">
                     <img src="${produit.imageUrl}" class="w-98" alt="">
                     <p class="txtGras policeLato">${produit.nom}</p>
                     <div class="flex  margin-top-10 gap-10 policeRaleway prix ">
