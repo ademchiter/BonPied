@@ -18,10 +18,12 @@ function afficherProduits(data) {
     let baseLine = data.baseLine;
     let phraseAccroche = data.phraseAccroche;
     let texteAppelAction = data.texteAppelAction;
+    let avantages = data.avantagesClients;
     let produits = data.produits;
     let services = data.services;
     let temoignages = data.temoignages;
-
+    // phrase qui s'affichera dans ma section avantages clients
+    let phraseAvantage="";
 
     //j'injecte mes données dans ma bannière 
     document.getElementById("section1").innerHTML += `     <div class="flex container space-between  align-center">
@@ -68,6 +70,13 @@ function afficherProduits(data) {
     //j'injecte mes avantages clients
     //  document.getElementById("section1").innerHTML += `   avantage`
 
+    avantages.forEach(avantage => {
+        phraseAvantage= phraseAvantage + `${avantage} | `
+    });
+
+      document.getElementById("avantage").innerHTML += `${phraseAvantage}`
+
+
     //pour chaque service
     services.forEach(service => {
 
@@ -75,7 +84,7 @@ function afficherProduits(data) {
         document.getElementById("services").innerHTML += `  
          
                 <!-- ma première div Nos services -->
-                <div class="w-33 textCenter card" data-aos="fade-up" data-aos-duration="1500" data-aos-duration="700">
+                <div class="w-33 textCenter card " data-aos="fade-up" data-aos-duration="1500" data-aos-duration="700">
                     <i class="${service.classPhosphoreIcon}"></i>
                     <p class="txtGras margin-top-10">${service.nom}</p>
                     <p class="margin-top-10">${service.description}</p>
