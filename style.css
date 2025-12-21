@@ -98,11 +98,9 @@
     width: 48%;
 }
 
-
 .w-73 {
     width: 73%;
 }
-
 
 .w-98 {
     width: 98%;
@@ -176,13 +174,14 @@
     padding: 20px;
 }
 
+.padding-40 {
+    padding: 40px;
+}
+
 .padding-50 {
     padding: 50px;
 }
 
-.padding-40 {
-    padding: 40px;
-}
 
 
 body {
@@ -199,16 +198,18 @@ a {
     color: black;
 }
 
+/* enlever les puces des listes à puces*/
 header ul {
     list-style: none;
 }
 
+
+
+/* classes background */
 .bgmarron {
     background-color: #996830;
 }
 
-
-/* background rouge pour faire mes test */
 .bgred {
     background-color: red;
 }
@@ -217,12 +218,15 @@ header ul {
     background-color: blue;
 }
 
-
-
 .bgBeige {
     background-color: #F2EDEA;
 
 }
+
+.bgFooter {
+    background-color: #354733
+}
+
 
 /* CONTAINER */
 .container {
@@ -276,7 +280,7 @@ header ul {
     font-family: "Inria Sans", sans-serif;
 }
 
-/* style de mes cartes services */
+/* style de mes cartes produits / services / retours clients */
 .card {
 
     background-color: #F8F9FB;
@@ -284,7 +288,6 @@ header ul {
     /* l'ombre de mes card */
     box-shadow: 0px 6.475523948669434px 6px 0px rgba(41, 41, 41, 8%);
 }
-
 
 /* pour mettre mon texte en gras */
 .txtGras {
@@ -301,7 +304,7 @@ header ul {
     color: white;
 }
 
-/* style de mes 3 icones phoshore-icon */
+/* style de mes 3 icones phoshore-icon (section services) */
 .icone {
     font-size: 50px;
 }
@@ -309,10 +312,6 @@ header ul {
 /* color jaune pour mes étoiles */
 .colorYellow {
     color: #F4B93D
-}
-
-.bgFooter {
-    background-color: #354733
 }
 
 
@@ -327,8 +326,6 @@ header ul {
     animation: marquee 20s linear infinite;
     gap: 16px;
 }
-
-
 
 /* Chaque bloc */
 .avantage {
@@ -363,11 +360,13 @@ h3 {
     font-size: 23px;
 }
 
+
+/* style de mes images Retours Clients */
 .imageProfil {
     border-radius: 50%;
 }
 
-/* Style de ma baseline*/
+/* Style de ma baseline */
 .txtVert {
     color: #61865D;
 }
@@ -413,6 +412,7 @@ h3 {
 
 }
 
+/* paragraphe dans mon footer */
 .pFooter {
     font-size: 13px;
     font-weight: 300;
