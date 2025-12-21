@@ -2,15 +2,26 @@ fetch('sneakers.json')
     .then(response => response.json())
     .then(data => {
 
-        // appeler afficherProduits
-        //  afficherProduits(data)
-
+        // j'appelle ma fonction qui permet d'afficher ma bannière
+        afficherBanniere(data)
+        // j'appelle ma fonction qui permet d'afficher mes services
         afficherProduits(data)
-
+        // j'appelle ma fonction qui permet d'afficher mes avantages
+        afficherAvantages(data)
+        // j'appelle ma fonction qui permet d'afficher mes services
+        afficherServices(data)
+        // j'appelle ma fonction qui permet d'afficher mes témoignages
+        afficherTemoignages(data)
     })
 
-function afficherProduits(data) {
-    console.log(data)
+
+/*
+ROLE : AFFICHER MA BANNIERE
+PARAMETRES : data
+RETURN : RIEN
+*/
+function afficherBanniere(data) {
+
 
     // je récupère mes données et je les met dans mes variables
 
@@ -18,12 +29,6 @@ function afficherProduits(data) {
     let baseLine = data.baseLine;
     let phraseAccroche = data.phraseAccroche;
     let texteAppelAction = data.texteAppelAction;
-    let avantages = data.avantagesClients;
-    let produits = data.produits;
-    let services = data.services;
-    let temoignages = data.temoignages;
-    // phrase qui s'affichera dans ma section avantages clients
-    let phraseAvantage="";
 
     //j'injecte mes données dans ma bannière 
     document.getElementById("section1").innerHTML += `     <div class="flex container space-between  align-center">
@@ -42,6 +47,22 @@ function afficherProduits(data) {
                     <img src="asset/basketBanner.png" alt="" class="w-98 ">
                 </div>
             </div>`
+
+
+}
+
+/*
+ROLE : AFFICHER MES PRODUITS
+PARAMETRES : data
+RETURN : RIEN
+*/
+function afficherProduits(data) {
+
+
+
+    // je récupère mes données et je les met dans mes variables
+
+    let produits = data.produits;
 
 
     //pour chaque produit
@@ -65,17 +86,39 @@ function afficherProduits(data) {
 
 `    });
 
+}
 
+/*
+ROLE : AFFICHER MES AVANTAGES CLIENTS
+PARAMETRES : data
+RETURN : RIEN
+*/
+function afficherAvantages(data) {
 
-    //j'injecte mes avantages clients
-    //  document.getElementById("section1").innerHTML += `   avantage`
+    // je récupère mes données et je les met dans mes variables
+
+    let avantages = data.avantagesClients;
+
+    // phrase qui s'affichera dans ma section avantages clients
+    let phraseAvantage = "";
 
     avantages.forEach(avantage => {
-        phraseAvantage= phraseAvantage + `${avantage} | `
+        phraseAvantage = phraseAvantage + `${avantage} | `
     });
 
-      document.getElementById("avantage").innerHTML += `${phraseAvantage}`
+    document.getElementById("avantage").innerHTML += `${phraseAvantage}`
 
+
+}
+
+/*
+ROLE : AFFICHER MES SERVICES
+PARAMETRES : data
+RETURN : RIEN
+*/
+function afficherServices(data) {
+
+    let services = data.services;
 
     //pour chaque service
     services.forEach(service => {
@@ -93,6 +136,30 @@ function afficherProduits(data) {
         
 
 `    });
+
+}
+
+/*
+ROLE : AFFICHER MES TEMOIGNAGES
+PARAMETRES : data
+RETURN : RIEN
+*/
+function afficherTemoignages(data) {
+
+
+    let nomCommercial = data.nomCommercial;
+    let baseLine = data.baseLine;
+    let phraseAccroche = data.phraseAccroche;
+    let texteAppelAction = data.texteAppelAction;
+    let avantages = data.avantagesClients;
+    let produits = data.produits;
+    let services = data.services;
+    let temoignages = data.temoignages;
+    // phrase qui s'affichera dans ma section avantages clients
+    let phraseAvantage = "";
+
+
+
     //pour chaque temoignage
     temoignages.forEach(temoignage => {
 
@@ -121,6 +188,5 @@ function afficherProduits(data) {
                     </div>
 
 `    });
-
 
 }
