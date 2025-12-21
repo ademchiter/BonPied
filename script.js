@@ -4,12 +4,16 @@ fetch('sneakers.json')
 
         // j'appelle ma fonction qui permet d'afficher ma bannière
         afficherBanniere(data)
+
         // j'appelle ma fonction qui permet d'afficher mes services
         afficherProduits(data)
+
         // j'appelle ma fonction qui permet d'afficher mes avantages
         afficherAvantages(data)
+
         // j'appelle ma fonction qui permet d'afficher mes services
         afficherServices(data)
+
         // j'appelle ma fonction qui permet d'afficher mes témoignages
         afficherTemoignages(data)
     })
@@ -21,7 +25,6 @@ PARAMETRES : data
 RETURN : RIEN
 */
 function afficherBanniere(data) {
-
 
     // je récupère mes données et je les met dans mes variables
     let nomCommercial = data.nomCommercial;
@@ -149,7 +152,7 @@ function afficherTemoignages(data) {
     //pour chaque temoignage
     temoignages.forEach(temoignage => {
 
-
+        //je récupère la note et je la met dans la variable test
         let test = temoignage.note
 
         //ma variable contenant le nombre d'étoiles pour chaque témoignage
