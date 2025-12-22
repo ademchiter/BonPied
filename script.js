@@ -107,7 +107,7 @@ function afficherAvantages(data) {
     // j'injecte la phrase dans ma section Avantage
     document.getElementById("avantage").innerHTML += `${phraseAvantage}`
 
-
+    document.getElementById("avantage2").innerHTML += `${phraseAvantage}`
 }
 
 /*
