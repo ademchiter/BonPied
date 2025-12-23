@@ -182,14 +182,9 @@
 }
 
 
-
-body {
-    font-family: "Playfair Display", serif;
-    overflow-x: hidden;
-}
-
-
-
+/* ------------------------------
+----------- TEXTES --------------
+------------------------------*/
 
 /* supprimer les soulignements de mes liens */
 a {
@@ -202,7 +197,44 @@ header ul {
     list-style: none;
 }
 
+body {
+    font-family: "Playfair Display", serif;
+    overflow-x: hidden;
+}
 
+
+/* style de mes h1, h2, h3*/
+h1,
+h2,
+h3 {
+    font-family: "Manjari", sans-serif;
+
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+
+
+/* pour mettre mon texte en gras */
+.txtGras {
+    font-weight: bold;
+}
+
+/* pour mettre mon texte en italic */
+.txtItalic {
+    font-style: italic;
+}
+
+/* pour mettre mon texte en blanc */
+.txtWhite {
+    color: white;
+}
 
 /* classes background */
 .bgmarron {
@@ -291,21 +323,6 @@ header ul {
     box-shadow: 0px 6.475523948669434px 6px 0px rgba(41, 41, 41, 8%);
 }
 
-/* pour mettre mon texte en gras */
-.txtGras {
-    font-weight: bold;
-}
-
-/* pour mettre mon texte en italic */
-.txtItalic {
-    font-style: italic;
-}
-
-/* pour mettre mon texte en blanc */
-.txtWhite {
-    color: white;
-}
-
 /* style de mes 3 icones phoshore-icon (section services) */
 .icone {
     font-size: 50px;
@@ -345,23 +362,6 @@ header ul {
         transform: translateX(-50%);
     }
 }
-
-/* style de mes h1, h2, h3*/
-h1,
-h2,
-h3 {
-    font-family: "Manjari", sans-serif;
-
-}
-
-h2 {
-    font-size: 55px;
-}
-
-h3 {
-    font-size: 23px;
-}
-
 
 /* style de mes images Retours Clients */
 .imageProfil {
