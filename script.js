@@ -42,7 +42,7 @@ function afficherBanniere(data) {
                     <p class="txtVert2 margin-top-10 policeRaleway">${phraseAccroche}</p>
 
                     <!-- bouton pour découvrir la collection -->
-                    <a class="btn margin-top-10" href="">${texteAppelAction}</a>
+                    <a class="btn margin-top-10" href="#section2">${texteAppelAction}</a>
                 </div>
                 <!-- la deuxième div de ma banner -->
                 <div class="w-48">

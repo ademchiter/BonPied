@@ -279,6 +279,14 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-size: 12px;
     font-weight: 300;
+    transition: transform .3s;
+}
+
+/* survol du bouton "decouvrir la collection" */ 
+.btn:hover{
+ 
+transform: translateY(-3px);
+
 }
 
 /* bouton "en savoir plus" */
@@ -291,6 +299,14 @@ h3 {
     font-family: "Raleway", sans-serif;
     font-size: 12px;
     font-weight: 300;
+ transition: transform .3s;
+}
+
+/* survol du bouton "en savoir plus"  */ 
+.btn2:hover{
+ 
+transform: translateY(-3px);
+
 }
 
 
@@ -302,6 +318,15 @@ h3 {
     border: none;
     font-family: "Epilogue", sans-serif;
     font-weight: 600;
+     transition: transform .3s;
+}
+
+
+/* survol du bouton "Envoyer" footer */
+.btn3:hover{
+ 
+transform: translateY(-3px);
+
 }
 
 /* style de ma section Avantage client */
@@ -418,4 +443,16 @@ h3 {
 .pFooter {
     font-size: 13px;
     font-weight: 300;
+}
+
+/* li de ma nav*/
+.liNav{
+    transition: transform .3s;
+}
+
+/* survol des li de ma nav */ 
+.liNav:hover{
+ 
+transform: translateY(-3px);
+
 }
